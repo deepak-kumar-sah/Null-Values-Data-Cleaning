@@ -1,1 +1,6 @@
+**pycache**/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.log
 
