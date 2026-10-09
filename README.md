@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project focuses on identifying and handling missing values in a dataset using Python, Pandas, NumPy, and Jupyter Notebook. The goal is to improve data quality and prepare the dataset for further analysis.
+This project focuses on identifying and handling missing values in an employee-related dataset using Python, Pandas, NumPy, and Jupyter Notebook. The objective is to improve data quality and prepare the dataset for further analysis.
 
 ## Objectives
 
@@ -12,21 +12,35 @@ This project focuses on identifying and handling missing values in a dataset usi
 * Convert columns to appropriate data types.
 * Verify the cleaned dataset.
 * Export the cleaned data into Excel and CSV formats.
+* Visualize missing values before and after cleaning.
 
 ## Tools & Technologies
 
 * Python
 * Pandas
 * NumPy
+* Matplotlib
 * Jupyter Notebook
 * Microsoft Excel
-* CSV
 
 ## Dataset Information
 
-The project uses an employee-related dataset containing columns such as Employee ID, Name, Age, Gender, Department, Salary, Experience, City, Education, Performance, Projects, and Joining Year.
+The dataset contains employee-related information, including:
 
-The dataset contains missing values and completely empty rows, making it suitable for practicing data cleaning techniques.
+* Employee ID
+* Name
+* Age
+* Gender
+* Department
+* Salary
+* Experience
+* City
+* Education
+* Performance
+* Projects
+* Joining Year
+
+The original dataset contains missing values and completely empty rows.
 
 ## Data Cleaning Process
 
@@ -38,6 +52,7 @@ The dataset contains missing values and completely empty rows, making it suitabl
 6. Converted integer-like columns and text columns to appropriate data types.
 7. Verified that no missing values remained in the cleaned dataset.
 8. Exported the cleaned dataset to Excel and CSV formats.
+9. Created a chart comparing missing values before and after cleaning.
 
 ## Key Results
 
@@ -45,7 +60,13 @@ The dataset contains missing values and completely empty rows, making it suitabl
 * Handled missing values using mode and median imputation.
 * Converted columns to suitable data types.
 * Verified that the cleaned dataset contains zero missing values.
-* Saved the cleaned dataset in Excel and CSV formats.
+* Exported the cleaned dataset into Excel and CSV formats.
+
+## Missing Values: Before vs After
+
+The following chart compares the total number of missing values before and after data cleaning.
+
+![Missing Values Before vs After Cleaning](images/missing_values_comparison.png)
 
 ## Project Structure
 
@@ -60,6 +81,9 @@ Null-Values-Data-Cleaning/
 ├── notebooks/
 │   └── Null_Values_Data_Cleaning.ipynb
 │
+├── images/
+│   └── missing_values_comparison.png
+│
 ├── README.md
 └── .gitignore
 ```
@@ -68,7 +92,8 @@ Null-Values-Data-Cleaning/
 
 * `cleaned_dataset.xlsx` — Cleaned dataset in Excel format.
 * `cleaned_dataset.csv` — Cleaned dataset in CSV format.
-* `Null_Values_Data_Cleaning.ipynb` — Notebook containing the data cleaning process.
+* `Null_Values_Data_Cleaning.ipynb` — Notebook containing the data cleaning steps.
+* `missing_values_comparison.png` — Visualization of missing values before and after cleaning.
 
 ## How to Run the Project
 
@@ -76,7 +101,7 @@ Null-Values-Data-Cleaning/
 
 2. Install the required libraries:
 
-   `pip install pandas numpy openpyxl`
+   `pip install pandas numpy matplotlib openpyxl`
 
 3. Open `notebooks/Null_Values_Data_Cleaning.ipynb` in Jupyter Notebook.
 
@@ -86,9 +111,9 @@ Null-Values-Data-Cleaning/
 
 * Data Cleaning
 * Missing Value Handling
-* Exploratory Data Preparation
 * Pandas and NumPy
 * Data Type Conversion
+* Data Visualization
 * Excel and CSV File Handling
 * Jupyter Notebook
 
